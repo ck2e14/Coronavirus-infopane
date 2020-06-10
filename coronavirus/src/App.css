@@ -1,0 +1,43 @@
+.App {
+  color: white;  
+  font-family: 'Barlow Condensed', sans-serif;
+}
+
+.page-content-wrapper {
+  position: fixed;
+  display: flex;
+  margin-top: 0;
+  margin-left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(Assets/c19bg.jpg);
+  background-position: ;
+  background-attachment: fixed;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container-app {
+  height: 60vh;
+  width: 80vw;
+  padding: 1%;
+  display: flex;
+  border-style: solid;
+  border-color: rgba(116, 175, 170, 0);
+  border-radius: 10px;
+  border-width: 10px;
+  flex-direction: row;
+  backdrop-filter: blur(7px);
+  background-color: rgba(0, 0, 0, 0.308);
+}
+
+.flex-content {
+  flex: 1;
+  border-style: dashed;
+  border-color: white;
+  margin: 0 0 1%;
+  padding: .75% .75% .75% .75%;
+}

@@ -8,14 +8,15 @@ export default class App extends React.Component {
 
    render() {
     return(
-     <Loader
-        type="Grid"
-        color="#383337"
-        height={100}
-        width={100}
-        timeout={3000} //3 secs
-
-     />
+       <div className="spinner">
+         <Loader
+            type="Circles"
+            color="#FAEBDA"
+            height={300}
+            width={300}
+            timeout={4000} //4 secs 
+          />  
+       </div>
     );
    }
 }

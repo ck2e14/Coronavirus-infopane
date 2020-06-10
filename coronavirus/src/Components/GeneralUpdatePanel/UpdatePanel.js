@@ -3,10 +3,13 @@ import Card from './UpdatePanelCard/UpdatePanelCard';
 import API from '../../Adapters/API/API';
 import axios from 'axios';
 import LoadingSpinner from '../LoadingSpinner/Spinner';
+import { CSSTransition } from 'react-transition-group';
+import './UpdatePanel.css';
 
 const UpdatePanel = props =>  {
    
    const [infoBundle, setInfoBundle] = useState([]);
+   const [inProp, setInProp] = useState(false)
 
    useEffect(() => {
      initialFetch()
@@ -45,16 +48,26 @@ const UpdatePanel = props =>  {
       })
    }
 
-   if (infoBundle.length === 0 ) {
-      return <div><LoadingSpinner/></div>
+   if (infoBundle.length === 0 ) {  
+      return (
+         <div className='spinner'>
+               <LoadingSpinner/>
+         </div>
+      )
    } else {
       return (
+
          <div className='update-panel-flex-wrapper'>
-            <h1 className="widget-header">The Latest</h1>
-            <h5 className="time-stamp">{infoBundle.Date}</h5>
-            <div className="update-panel-content-card">
-             <Card caseLoad={infoBundle} />   
+
+            <div className="update-panel-flex-item-1">
+               <div className="widget-header">The Latest </div>
+               <div className="time-stamp">@ {infoBundle.Date}</div>
             </div>
+
+            <div className="update-panel-flex-item">
+               <Card caseLoad={infoBundle} />   
+            </div>
+        
          </div>
       )
    }

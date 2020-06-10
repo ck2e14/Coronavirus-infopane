@@ -1,7 +1,3 @@
-.panel-cards h3 {
-   color: white;
-}
-
-.panel-cards {
-   color: rgb(0, 0, 0);
+.panel-card-item {
+   color: rgb(255, 255, 255);
 }

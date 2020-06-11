@@ -13,11 +13,17 @@ import './UpdatePanelCard.css';
       
       <div className='panel-cards'>
 
-         <div className="panel-card-item">New Confirmed Cases: </div>{caseLoad.Global.NewConfirmed}
+         <div className="panel-card-item">
+            <span>New Confirmed Cases </span> {caseLoad.Global.NewConfirmed}
+         </div>
 
-         <div className="panel-card-item">New Deaths: </div>{caseLoad.Global.NewDeaths}
+         <div className="panel-card-item">
+            <span>New Deaths </span> {caseLoad.Global.NewDeaths}
+         </div>
 
-         <div className="panel-card-item">Total Confirmed Cases: </div>{caseLoad.Global.TotalConfirmed}
+         <div className="panel-card-item">
+            <span>Total Confirmed Cases </span> {caseLoad.Global.TotalConfirmed}
+         </div>
         
 
 

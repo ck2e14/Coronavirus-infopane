@@ -18,7 +18,7 @@ function App() {
         <div className="flex-content-contentPanel">
           
           <div className="contentPanel-filler upper-filler">  
-            <UpdatePanelWidget />
+              <UpdatePanelWidget />
           </div>
 
           <div className="contentPanel-filler lower-filler">

@@ -50,7 +50,7 @@ const UpdatePanel = props =>  {
 
    if (infoBundle.length === 0 ) {  
       return (
-         <div className='spinner'>
+         <div className='spinner-wrapper'>
                <LoadingSpinner/>
          </div>
       )
@@ -60,7 +60,6 @@ const UpdatePanel = props =>  {
          <div className='update-panel-flex-wrapper'>
 
             <div className="update-panel-flex-item-1">
-               <div className="widget-header">The Latest </div>
                <div className="time-stamp">@ {infoBundle.Date}</div>
             </div>
 
